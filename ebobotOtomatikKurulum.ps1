@@ -214,7 +214,7 @@ Write-Host "Ebabot $env:USERPROFILE\Downloads\ebabot-0.3\ dizinine çıkarıldı
 Write-Host "Ebabot'un çalışması için Chrome driver yüklenecek"  -ForegroundColor Yellow
 Write-Host "Google Chrome Driver indiriliyor..."  -ForegroundColor Yellow
 #Invoke-WebRequest https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_win32.zip -OutFile C:\tmp\chromedriver_win32.zip
-downloadFile "https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_win32.zip" "c:\tmp\chromedriver_win32.zip"
+downloadFile "https://chromedriver.storage.googleapis.com/2.35/chromedriver_win32.zip" "c:\tmp\chromedriver_win32.zip"
 Write-Host "Google Chrome Driver indirildi. Zip'ten çıkarılacak"  -ForegroundColor Green
 Get-ChildItem 'C:\tmp\chromedriver_win32.zip'  | Expand-Archive -DestinationPath $env:USERPROFILE\Downloads\ebabot-0.3 -Force
 Write-Host "Google Chrome Driver $env:USERPROFILE\Downloads\ebabot-0.3\ dizinine çıkarıldı"  -ForegroundColor Green
